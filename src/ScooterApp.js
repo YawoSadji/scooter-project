@@ -45,7 +45,7 @@ class ScooterApp {
     }
     const scooter = new Scooter(station);
     this.stations[station].push(scooter);
-    console.log('created new scooter');
+    console.log(`created new scooter, serial ${scooter.serial}`);
     return scooter;
   }
   dockScooter(scooter, station){
