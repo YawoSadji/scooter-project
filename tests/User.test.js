@@ -27,7 +27,7 @@ test('right pw sets loggedIn to true with right pw', () => {
 //test login with wrong pw
 test('login method with wrong pw throws error', () => {
   const user = new User('Joe Bloggs', 'test123', 21);
-  expect(()=>{user.login('test    123').toThrowError('Incorrect password')});
+  expect(()=>{user.login('test   123')}).toThrowError('Username or password is incorrect');
 });
 // test logout
 test('logout method sets loggedIn to false', () => {

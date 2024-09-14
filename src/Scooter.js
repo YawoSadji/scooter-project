@@ -40,9 +40,9 @@ class Scooter {
     }
     async requestRepair(){
       console.log('Request repair');
-      await new Promise(resolve => setTimeout(resolve, 5000)); // wait 5 seconds
+      await new Promise(resolve => setTimeout(resolve, 4500)); // wait 4500 milliseconds
       this.isBroken = false;
-      console.log('repair completed');
+      console.log('repair');
     }
 
   }
